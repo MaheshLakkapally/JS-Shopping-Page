@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="styling.css">
+
+<body>
+    <div id="sort">
+        <div id="prize" onchange="sort('prize','selectPrize')">
+        </div>
+        <div id="color" onchange="sort('color','selectColor')">
+        </div>
+        <div id="size" onchange="sort('size','selectSize')">
+        </div>
+    </div>
+    <div id="main">
+        <div id="dressListView">
+        </div>
+    </div>
+</body>
+<script src="menWearList.js"></script>
+<script src="dailyWear.js"></script>
+<script src="selectOptions.js"></script>
+<script src="srting.js"></script>
+<script>
+var prizeSort = {
+    value: ["1", "2", "3", "4", "5"],
+    valueName: ["No-prize", "0-10", "10-20", "20-30", "30-40"],
+    onclick: sort
+}
+var colorsSort = {
+    value: ["1", "2", "3", "4", "5"],
+    valueName: ["select-color", "white", "red", "black", "blue"],
+    onclick: sort
+}
+var sizeSort = {
+    value: ["1", "2", "3", "4", "5", "6", "7", "8"],
+    valueName: ["select-size", "xs", "S", "M", "L", "XL", "2XL", "3XL"]
+}
+
+createMenWearPage(menWearList, 'dressListView');
+suffixFunction(prizeSort, 'Prize', 'suffixCss', 'sort', 'prize', 'selectPrize');
+suffixFunction(colorsSort, 'color', 'suffixCss', 'sort', 'color', 'selectColor');
+suffixFunction(sizeSort, 'size', 'suffixCss', 'sort', 'size', 'selectSize');
+</script>
+
+</html>

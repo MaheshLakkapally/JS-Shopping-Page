@@ -1,0 +1,51 @@
+    #main {
+        margin: 10px 141px;
+        clear: both;
+    }
+    
+    .divTag {
+        /* float: left; */
+        /* box-sizing: border-box; */
+        display: inline-block;
+        padding: 6px 1px;
+        width: -8px;
+        margin: 0px 0px -6px -2px;
+        width: 305px;
+        /* height: 276px; */
+        vertical-align: top;
+    }
+    
+    .imgs {
+        height: 300px;
+        width: 289px;
+    }
+    
+    #productInfo {
+        text-align: center;
+        margin-top: -10px;
+    }
+    
+    .p1 {
+        margin-top: -10px;
+    }
+    
+    .suffixCss {
+        padding: 9px 22px 9px 17px;
+    }
+    
+    #selectPrize,
+    #selectColor {
+        margin-top: -10px;
+    }
+    
+    #prize,
+    #color,
+    #size {
+        float: left;
+        padding-right: 40px;
+        margin-left: 140px;
+    }
+    
+    #sort {
+        display: inline-block;
+    }
